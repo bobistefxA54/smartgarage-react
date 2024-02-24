@@ -12,7 +12,7 @@ const OfferedServices = () => {
     try {
       const response = await axios.get("http://localhost:5282/api/services");
       const data = response.data;
-      console.log("Offered services:", data);
+      console.log(data);
       setServices(data);
     } catch (error) {
       console.error("Offered services fetch error:", error);
@@ -27,7 +27,9 @@ const OfferedServices = () => {
     <div className="p-2" style={{ backgroundColor: "#E5E6E7" }}>
       <h6>Offered Services</h6>
       <hr />
-      {services.length !== 0 && (
+      {services.length === 0 ? ( // Render "Loading..." if services is null
+        <p>Loading...</p>
+      ) : (
         <ul>
           {services.map((service, index) => (
             <li key={index}>{service.name}</li>
