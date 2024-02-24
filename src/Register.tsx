@@ -50,8 +50,8 @@ const Register = () => {
     >
       <Logo name="Register to SmartGarage" />
       <div
-        className="d-flex flex-column justify-content-center gap-2"
-        style={{ width: "30vh" }}
+        className="d-flex flex-column justify-content-center gap-4"
+        style={{ width: "40vh" }}
       >
         <InputForm
           inputs={inputs}
