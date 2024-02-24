@@ -14,14 +14,14 @@ export default function InputForm({
   onBlur,
 }: InputFormProps) {
   return (
-    <div>
+    <div className="d-flex flex-column gap-2">
       {inputs.map((input, index) => (
         <input
           type={input === "Password" ? "password" : "text"}
           className={styles}
           key={index}
           placeholder={input}
-          style={{borderColor: color}}
+          style={{ borderColor: color }}
           onChange={(e) => onInputChange(index, e.target.value)}
           onBlur={onBlur}
         />
