@@ -7,17 +7,19 @@ interface NavBarProps {
 const NavBar = ({ pages }: NavBarProps) => {
   return (
     <div
-      className="d-flex flex-column align-items-center shadow gap-3"
+      className="d-flex justify-content-end align-items-center shadow gap-3"
       style={{
-        width: "20vh",
+        width: "100%",
+        height: "50px",
         borderRight: "1px solid gray",
-        backgroundColor: "#f5f5f5",
+        backgroundColor: "#3094CC",
       }}
     >
       <hr />
       {pages.map((page, index) => (
         <NavItem key={index} name={page} />
       ))}
+      <p>Profile pic</p>
     </div>
   );
 };

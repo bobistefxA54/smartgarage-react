@@ -3,7 +3,7 @@ import MapAndInfo from "./MapAndInfo";
 
 const CustomerHomeContent = () => {
   return (
-    <div className="d-flex p-5 border border-dark" style={{ width: "70vh" }}>
+    <div className="d-flex gap-2" style={{ width: "50%" }}>
       <CarsAndServices />
       <MapAndInfo />
     </div>

@@ -8,14 +8,14 @@ interface ButtonProps {
 
 const Button = ({
   name,
-  onClick,
   color = "primary",
-  onMouseEnter,
   disabled = false,
+  onClick,
+  onMouseEnter,
 }: ButtonProps) => {
   return (
     <button
-      className={"btn btn-" + color}
+      className={"text-light btn btn-" + color}
       onClick={onClick}
       onMouseEnter={onMouseEnter}
       disabled={disabled}

@@ -1,6 +1,6 @@
 const Map = () => {
   return (
-    <div>
+    <div className="p-2" style={{ backgroundColor: "#E5E6E7" }}>
       <h3>Map</h3>
       <hr />
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi mollitia

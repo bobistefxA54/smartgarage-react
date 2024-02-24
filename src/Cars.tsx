@@ -1,6 +1,6 @@
 const Cars = () => {
   return (
-    <div>
+    <div className="p-2" style={{ backgroundColor: "#E5E6E7" }}>
       <h3>Cars</h3>
       <hr />
       <p>

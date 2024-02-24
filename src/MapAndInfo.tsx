@@ -3,9 +3,9 @@ import Map from "./Map";
 
 const MapAndInfo = () => {
   return (
-    <div>
-      <Map />
+    <div className="p-2" style={{ backgroundColor: "#D3D3D4" }}>
       <Info />
+      <Map />
     </div>
   );
 };
